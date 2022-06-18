@@ -22,13 +22,4 @@ public class Calle {
     public int getDistancia() {
         return distancia;
     }
-
-    @Override
-    public String toString() {
-        return "Calle{" +
-                "esquinaOrigen=" + esquinaOrigen +
-                ", esquinaDestino=" + esquinaDestino +
-                ", distancia=" + distancia +
-                '}';
-    }
 }

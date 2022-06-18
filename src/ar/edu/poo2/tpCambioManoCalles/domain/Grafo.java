@@ -26,16 +26,6 @@ public class Grafo {
         return grafo[calle.getEsquinaOrigen()][calle.getEsquinaDestino()] != 0;
     }
 
-    public void mostrar(){
-        for (int i=0; i<cantVertices; i++){
-            for (int j=0; j<cantVertices; j++){
-                if (grafo[i][j] != 0)
-                    System.out.print(" verticeOrig= " + i + " verticeDest= " + j + " peso= " + grafo[i][j]);
-            }
-            System.out.println(" ");
-        }
-    }
-
     public int dijkstra(int origen, int destino) {
         int[] distanciaMasCorta = new int[cantVertices];
         boolean[] verticeYaProcesado = new boolean[cantVertices];
